@@ -16,12 +16,12 @@
                <h2 class="form__title">Login</h2>
                <div class="form__message form__message--error">De combinatie van uw email-adres en wachtwoord is onjuist.</div>
                <div class="form__input-group">
-                    <label>Email</label>
+                    <label>Email:</label>
                     <input type="text" name="email" class="form__input" autofocus placeholder="email">
                     <div class="form__input-error-message">Er is iets fout gegaan.</div>
                 </div>
                 <div class="form__input-group">
-                    <label>Wachtwoord</label>
+                    <label>Wachtwoord:</label>
                     <input type="password" name="password" class="form__input" placeholder="Wachtwoord">
                     <div class="form__input-error-message">Er is iets fout gegaan.</div>
                 </div>
