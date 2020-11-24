@@ -1,0 +1,86 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary: #009579;
+    --color-primary-dark:#007f67;
+    --color-secondary: #0072ff;
+    --color-error: #cc3333;
+    --color-success: #4bb544;
+    --border-radius: 0.5rem;
+    --black: #212121;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: column;
+    font-size: 1.9rem;
+    top: 50%;
+    left: 50%;
+}
+
+
+
+.containter{
+    background-color: var(--color-primary);
+    padding: 2rem;
+    border: 0.2rem solid var(--black);
+    border-radius: var(--border-radius);
+    margin: 2rem;
+    box-shadow: 0 0 6rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.form__title{
+    padding-bottom: 2.5rem;
+}
+
+.form__button{
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.8rem 2rem;
+    border: .2rem solid var(--black);
+    border-radius: var(--border-radius);
+    background-color: var(--color-secondary);
+    color: white;
+    
+}
+
+.form__button:hover{
+    box-shadow: .2rem .4rem rgba(0, 0, 0, 0.5);
+    transition: .2s;
+    cursor: pointer;
+}
+
+@media (orientation: portrait){
+    body{
+        background: url(loginBg_staand.jpg);
+        background-color: #cccccc; /* Used if the image is unavailable */
+        height: 100vh; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+    }
+}
+
+@media (orientation: landscape){
+    body{
+        background: url(landscapeBg_login.jpg);
+        background-color: #cccccc; /* Used if the image is unavailable */
+        height: 100vh; /* You must set a specified height */
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+    }
+}
